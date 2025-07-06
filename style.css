@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+  font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: #222;    
+    background:
+      linear-gradient(120deg, rgba(255,255,255,0.85) 0%, rgba(200,230,255,0.6) 100%),
+      url("m.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0; z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.container
+{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+.hero-section{
+    padding: 150px 0 0 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.hero-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+ .hero-content{
+    
+    flex: 1 1 534px;
+    min-width: 300px;
+    margin-left: 50px;
+
+
+}
+.hero-image{
+    flex: 1 1 272px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    background: none; 
+    width: auto;
+    height: auto
+}
+
+.logo-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6ee7b7, #3b82f6, #a78bfa, #f472b6, #facc15, #6ee7b7);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-move 5s linear infinite;
+    letter-spacing: 1px;
+}
+
+@keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.navbar{
+    background: transparent;
+    /* padding: 30px 0 0 0; */
+
+}
+
+.contact-btn{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: #27006d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menu-btn {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.menu-btn .pen {
+  width: 26px;
+  height: 5px;
+  background: #27006d;
+  border-radius: 2px;
+  margin: 3px 0;
+  transition: 0.3s;}
+
+.tbweb {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background: #c9c1d7;
+    border-radius: 50px;
+    padding: 10px 24px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hero-content  h2{
+    color: #27006d;
+font-size: 61px;
+    line-height: 1;
+    letter-spacing:-2.56px;
+    font-weight: 600;
+}
+.hero-content p{
+color: #27006d;
+        /* font-family: var(--manrope); */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 540px;
+    margin-top: 55px;
+}
+.hero-image img {
+    width: 350px;
+    animation: anmi 5s ease-in-out infinite;
+}
+
+@keyframes anmi {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-50px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+
+
+.hero-actions a{
+    min-width: 200px;
+    padding: 24px 40px;
+    background-size: 100% 250% !important;
+    background-position: top !important;
+    transition: .5s ease-in-out;
+    text-align: center;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.hero-actions{
+        margin-top: 23px;
+}
+.hero-strategy{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -.48px;
+        margin-top: 31px;
+        color: #27006d;
+
+}
+@media (max-width: 1000px) {
+  .hero-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;  }
+}
+@media (max-width: 600px) {
+  .contact-btn {
+    display: none !important;
+  }
+  /* .menu-btn {
+
+    margin-left: 16px;
+} */
+.tbweb {
+    background: #c9c1d7;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 6px;
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    gap: 0;
+  }
+  .menu-btn {
+    margin-left: 0;/
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 128px;
+  right: 0;
+  width: 211px;
+  height: 426px;
+  background: #ffffffc7;
+  border-radius: 30px;
+  box-shadow: -2px 0 24px rgba(39, 0, 109, 0.10);
+  z-index: 2000;
+  padding: 48px 0 0 0;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translateX(100%); 
+  overflow: hidden;
+  opacity: 0; 
+  pointer-events: none; 
+}
+
+.mobile-menu.open {
+transform: translateX(-90px);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu ul {
+     list-style: none;
+    /* padding: 109px; */
+    margin: 0;
+    display: flex
+;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    height: 86%;
+}
+.mobile-menu li a {
+  color: #2d186d;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+  padding: 0 0 0 0;
+  text-transform: uppercase;
+}
+.mobile-menu li a:hover {
+  color: #a78bfa;
+}
+@media (max-width: 600px) {
+  .mobile-menu {
+        width: 80vw;
+        margin: auto;
+        border-radius: 0;
+        padding-top: 32px;
+        background: #ffffffc7;
+        border-radius: 30px;
+
+  }
+  .mobile-menu.open {
+  transform: translateX(-50px); 
+  opacity: 1;
+  pointer-events: auto;
+}
+  .mobile-menu ul {
+    gap: 24px;
+  }
+  .mobile-menu li a {
+    font-size: 2rem;
+  }
+}
+.menu-btn.open .topBar {
+
+    transform: rotate(45deg) translate(7px, 8px);
+
+}
+.menu-btn.open .middleBar {
+  opacity: 0;
+}
+.menu-btn.open .bottomBar {
+
+    transform: rotate(-45deg) translate(7px, -8px);
+
+}
+
+.menu-btn {
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+.menu-btn .pen {
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
